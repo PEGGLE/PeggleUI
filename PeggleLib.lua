@@ -122,21 +122,21 @@ local widget_h_dropdown = 36
 local widget_dropdown_box_h = 16
 local widget_dropdown_item_h = 18
 
-local z_border = 10
-local z_bg = 11
-local z_chrome = 12
-local z_sep = 13
-local z_tab_bg = 14
-local z_section_border = 14
-local z_section_bg = 15
-local z_tab_el = 15
-local z_section_header = 16
-local z_widget = 16
-local z_section_scroll = 17
-local z_content_scroll = 18
-local z_mask = 20
-local z_title_el = 22
-local z_dropdown = 50
+local z_border = 1010
+local z_bg = 1011
+local z_chrome = 1012
+local z_sep = 1013
+local z_tab_bg = 1014
+local z_section_border = 1014
+local z_section_bg = 1015
+local z_tab_el = 1015
+local z_section_header = 1016
+local z_widget = 1016
+local z_section_scroll = 1017
+local z_content_scroll = 1018
+local z_mask = 1020
+local z_title_el = 1022
+local z_dropdown = 1050
 
 local key_names = {
     [0x01] = "M1",
@@ -888,6 +888,7 @@ end
 
 function ui.set_window_visible(win, visible)
     win.visible = visible
+    setrobloxinput(not visible)
     refresh_tabs(win)
 end
 
@@ -1730,7 +1731,6 @@ function ui.update()
 
     ui._prev_m1 = m1
 end
-
 
 task.spawn(function()
     while true do
