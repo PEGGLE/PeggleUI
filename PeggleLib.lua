@@ -1,7 +1,7 @@
 local local_player = game:GetService("Players").LocalPlayer
 local mouse = local_player:GetMouse()
 
-local ui = {}
+ui = {}
 ui._windows = {}
 ui._drag = nil
 ui._content_scroll_drag = nil
@@ -1757,5 +1757,4 @@ end
 
 ui.apply_theme = apply_theme_to_all_draws
 
-_G.PeggleUI = ui
 return ui
