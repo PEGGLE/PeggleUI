@@ -1,4 +1,4 @@
-# primordial
+# PeggleUI (Primordial-ish Based)
 
 ![Lua](https://img.shields.io/badge/Lua-blue?style=flat-square) ![Roblox](https://img.shields.io/badge/Roblox-executor-green?style=flat-square) ![Matcha](https://img.shields.io/badge/Matcha-Drawing%20API-red?style=flat-square)
 
