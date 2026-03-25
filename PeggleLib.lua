@@ -1757,4 +1757,5 @@ end
 
 ui.apply_theme = apply_theme_to_all_draws
 
+_G.PeggleUI = ui
 return ui
