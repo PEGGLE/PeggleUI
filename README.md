@@ -135,7 +135,7 @@ local win = ui.create_window("main", "my cheat", 200, 150, 820, 510)
 ### Adding tabs and sections
 
 ```lua
-local tab_aim = ui.add_tab(win, "aimbot", "Aim Bot", "Automatically aim & shoot")
+local tab_aim = ui.add_tab(win, "aimbot", "Aimbot", "Automatically aim")
 local tab_misc = ui.add_tab(win, "misc", "Misc", "Miscellaneous features")
 
 local sec_general = ui.add_section(win, tab_aim, "General", ui.Side.Left)
