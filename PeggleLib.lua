@@ -1757,5 +1757,3 @@ function ui.set_theme(name, win)
 end
 
 ui.apply_theme = apply_theme_to_all_draws
-
-return ui
