@@ -1,7 +1,8 @@
 local local_player = game:GetService("Players").LocalPlayer
 local mouse = local_player:GetMouse()
 
-ui = {}
+_G.ui = {}
+ui = _G.ui
 ui._windows = {}
 ui._drag = nil
 ui._content_scroll_drag = nil
