@@ -13,7 +13,7 @@ A fully featured Drawing-based UI library for Roblox executors. Built with the M
 - **Themes** — 5 built-in themes with live switching and a full theming API
 - **Widgets** — header text, info text, divider, spacer, toggle, slider, button, dropdown, multiselect, keybind
 - **Keybind system** — click to bind, Esc to cancel, cooldown guard to prevent re-fire on bind key
-- **Library pattern** — `return ui` at the end, require or loadstring into your own script
+- **Library pattern** — `_G.ui` is being used, loadstring into your own script and access with ui.
 
 ---
 
@@ -127,7 +127,7 @@ String name of the currently active theme. Updated by `ui.set_theme`.
 ## Usage
 
 ```lua
-local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/.../ui.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/.../ui.lua"))()
 
 local win = ui.create_window("main", "my cheat", 200, 150, 820, 510)
 ```
